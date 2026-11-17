@@ -3,6 +3,7 @@ print("Hello World")
 print("This is my first code in Python")
 
 #For int Data type
+#using in Retail,Banking,System...
 print(19)
 print(type(19))
 
