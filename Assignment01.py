@@ -47,3 +47,15 @@ elif subtotal >= 5000:
 else:
     discount = 0
 print("Subtotal:", subtotal, " Discount:", discount)
+
+# ---------- T4: Catalogue search ----------
+print("\n----- T4 -----")
+catalogue = ["Wireless Mouse", "Basmati Rice 5kg", "Denim Jeans",
+             "Bluetooth Speaker", "Notebook Pack"]
+name = input("Enter product name: ")
+for i in range(len(catalogue)):
+    if catalogue[i] == name:
+        print("Found at position", i + 1)
+        break
+else:
+    print("Not stocked")
