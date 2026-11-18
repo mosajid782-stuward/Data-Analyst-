@@ -92,3 +92,16 @@ for no, (item, qty, price) in enumerate(orders, 1):
     print(f"{no}. {item} | Subtotal: {sub:.2f} | Discount: {disc:.2f} | GST: {gst:.2f} | Final: {fin:.2f}")
  
 print(f"Grand total = Rs. {grand_total:,.2f}")
+
+# ---------- T6: Input validation ----------
+print("\n----- T6 -----")
+attempts = 0
+while attempts < 3:
+    q = input("Enter quantity: ")
+    attempts += 1
+    if q.isdigit() and int(q) > 0:
+        print("Quantity accepted:", q)
+        break
+    print("Invalid, enter a positive integer")
+else:
+    print("Too many wrong attempts")
