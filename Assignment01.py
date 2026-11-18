@@ -36,3 +36,14 @@ print(f"100 notebooks = {cartons} cartons + {loose} loose units")
 print(0.1 + 0.2 == 0.3)                      # False
 print(round(0.1 + 0.2, 2) == 0.3)            # True after round()
 print(math.isclose(0.1 + 0.2, 0.3))          # True using isclose()
+
+# ---------- T3: Slab discount ----------
+print("\n----- T3 -----")
+subtotal = 12495
+if subtotal >= 10000:
+    discount = subtotal * 0.10
+elif subtotal >= 5000:
+    discount = subtotal * 0.05
+else:
+    discount = 0
+print("Subtotal:", subtotal, " Discount:", discount)
