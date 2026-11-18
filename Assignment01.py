@@ -59,3 +59,36 @@ for i in range(len(catalogue)):
         break
 else:
     print("Not stocked")
+    
+# ---------- T5: Bill loop ----------
+print("\n----- T5 -----")
+orders = [
+    ("Wireless Mouse", 2, 799),
+    ("Basmati Rice 5kg", 8, 650),
+    ("Denim Jeans", 7, 1599),
+    ("Bluetooth Speaker", 5, 2499),
+    ("Notebook Pack", 10, 120),
+    ("USB-C Cable", 0, 299),   # invalid - must be skipped
+]
+ 
+grand_total = 0
+for no, (item, qty, price) in enumerate(orders, 1):
+    # skip invalid order
+    if qty <= 0 or price <= 0:
+        continue
+ 
+    sub = qty * price
+    if sub >= 10000:
+        disc = sub * 0.10
+    elif sub >= 5000:
+        disc = sub * 0.05
+    else:
+        disc = 0
+ 
+    gst = (sub - disc) * 0.18
+    fin = round(sub - disc + gst, 2)
+    grand_total = grand_total + fin
+ 
+    print(f"{no}. {item} | Subtotal: {sub:.2f} | Discount: {disc:.2f} | GST: {gst:.2f} | Final: {fin:.2f}")
+ 
+print(f"Grand total = Rs. {grand_total:,.2f}")
