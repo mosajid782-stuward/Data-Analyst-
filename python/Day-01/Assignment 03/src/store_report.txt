@@ -1,0 +1,7 @@
+RetailPulse Store-Wise Revenue Report
+========================================
+Noida          : Rs. 261,924.00
+Delhi          : Rs. 13,482.00
+Gurugram       : Rs. 5,614.00
+----------------------------------------
+Total Revenue  : Rs. 281,020.00

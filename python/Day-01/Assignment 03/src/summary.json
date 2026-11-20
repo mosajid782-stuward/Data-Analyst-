@@ -1,0 +1,35 @@
+{
+    "rows_loaded": 20,
+    "rows_skipped": [
+        "1010"
+    ],
+    "unique_stores_count": 3,
+    "unique_products_count": 9,
+    "total_revenue": 281020.0,
+    "revenue_by_store": {
+        "Noida": 261924.0,
+        "Delhi": 13482.0,
+        "Gurugram": 5614.0
+    },
+    "product_quantities": {
+        "Denim Jeans": 3,
+        "Gel Pen Box": 6,
+        "Bluetooth Speaker": 3,
+        "Wireless Mouse": 5,
+        "USB-C Cable": 13,
+        "Cotton T-Shirt": 7,
+        "Notebook Pack": 18,
+        "Olive Oil 1L": 3,
+        "Basmati Rice 5kg": 7
+    },
+    "upi_orders": [
+        "1001",
+        "1004",
+        "1007",
+        "1011",
+        "1013",
+        "1016",
+        "1018",
+        "1016"
+    ]
+}
